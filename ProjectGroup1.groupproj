@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF081D51-3195-40A1-9FC1-6CC612D9E8BA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\OTROS\ConsultaCepViaCep-master\ConsultaCepViaCep\ConsultaCepViaCep.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ConsultaCep.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ConsultaCepViaCep">
+        <MSBuild Projects="..\OTROS\ConsultaCepViaCep-master\ConsultaCepViaCep\ConsultaCepViaCep.dproj"/>
+    </Target>
+    <Target Name="ConsultaCepViaCep:Clean">
+        <MSBuild Projects="..\OTROS\ConsultaCepViaCep-master\ConsultaCepViaCep\ConsultaCepViaCep.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConsultaCepViaCep:Make">
+        <MSBuild Projects="..\OTROS\ConsultaCepViaCep-master\ConsultaCepViaCep\ConsultaCepViaCep.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConsultaCep">
+        <MSBuild Projects="ConsultaCep.dproj"/>
+    </Target>
+    <Target Name="ConsultaCep:Clean">
+        <MSBuild Projects="ConsultaCep.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConsultaCep:Make">
+        <MSBuild Projects="ConsultaCep.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ConsultaCepViaCep;ConsultaCep"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ConsultaCepViaCep:Clean;ConsultaCep:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ConsultaCepViaCep:Make;ConsultaCep:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

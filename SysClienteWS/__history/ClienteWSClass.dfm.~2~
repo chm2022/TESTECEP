@@ -1,0 +1,17 @@
+object ClienteWS: TClienteWS
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object rc: TRESTClient
+    Params = <>
+    Left = 24
+    Top = 16
+  end
+  object request: TRESTRequest
+    Client = rc
+    Params = <>
+    SynchronizedEvents = False
+    Left = 136
+    Top = 16
+  end
+end

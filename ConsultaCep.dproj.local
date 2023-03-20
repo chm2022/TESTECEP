@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/03/24 16:06:20.000.000,=C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/21 17:09:02.000.568,=C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/21 18:30:48.000.088,=C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/21 18:40:47.000.256,C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\CEP Info Sistemas\ConsultaCep\Unit1.dfm</Transaction>
+    <Transaction>2020/05/21 18:40:47.000.255,C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\CEP Info Sistemas\ConsultaCep\Unit1.pas</Transaction>
+    <Transaction>2020/05/21 18:40:57.000.798,C:\Users\Gil\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\CEP Info Sistemas\ConsultaCep\ConsultaCep.dproj</Transaction>
+    <Transaction>2020/05/21 18:42:13.000.828,=C:\CEP Info Sistemas\ConsultaCep\SysClienteWS\ClienteWSClass.pas</Transaction>
+    <Transaction>2020/05/21 19:00:27.000.989,=C:\CEP Info Sistemas\ConsultaCep\Unit2.pas</Transaction>
+    <Transaction>2020/05/21 19:06:37.000.187,C:\CEP Info Sistemas\ConsultaCep\Unit2.pas=C:\CEP Info Sistemas\ConsultaCep\cep.pas</Transaction>
+    <Transaction>2020/05/21 19:20:34.000.795,=C:\CEP Info Sistemas\ConsultaCep\SysXML\XmlClass.pas</Transaction>
+  </Transactions>
+</BorlandProject>
